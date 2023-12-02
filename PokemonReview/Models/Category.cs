@@ -2,7 +2,8 @@
 {
     public class Category
     {
-        public int CategoryID { get; set; }
+        public int ID { get; set; }
         public string CategoryName { get; set; }
+        public ICollection<PokemonCategory> PokemonCategories { get; set; }
     }
 }

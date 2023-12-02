@@ -2,7 +2,8 @@
 {
     public class Country
     {
-        public int CountryID { get; set; }
+        public int ID { get; set; }
         public string CountryName { get; set; }
+        public ICollection<Owner> Owners { get; set; }
     }
 }
